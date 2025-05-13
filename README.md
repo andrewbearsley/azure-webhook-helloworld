@@ -7,7 +7,7 @@
 
 A simple "Hello World" webhook application deployed to Azure using Terraform, Docker, and Go.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Quick Start](#quick-start)
@@ -19,7 +19,7 @@ A simple "Hello World" webhook application deployed to Azure using Terraform, Do
 - [Platform-Specific Notes](#platform-specific-notes)
 - [Troubleshooting](#troubleshooting)
 
-## 🔍 Overview
+## Overview
 
 This project demonstrates how to deploy a containerized Go web application to Azure using infrastructure as code. It creates:
 
@@ -31,7 +31,7 @@ This project demonstrates how to deploy a containerized Go web application to Az
   - App Service Plan (B1 tier)
   - Web App for Containers
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone the repository
@@ -54,7 +54,7 @@ az login
 curl https://your-app-name.azurewebsites.net
 ```
 
-## 🔧 Prerequisites
+## Prerequisites
 
 - **Azure Account** with active subscription
 - **Azure CLI** installed and configured
@@ -62,7 +62,7 @@ curl https://your-app-name.azurewebsites.net
 - **Docker** installed and running
 - **Go** v1.16+ (only for local development)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -74,7 +74,7 @@ curl https://your-app-name.azurewebsites.net
 └── README.md             # This documentation
 ```
 
-## 🌐 Deployment
+## Deployment
 
 ### Option 1: Full Deployment (Recommended)
 
@@ -117,7 +117,7 @@ To remove all Azure resources:
 ./scripts/terraform-destroy.sh
 ```
 
-## 💻 Local Development
+## Local Development
 
 ### Run with Go
 
@@ -138,7 +138,7 @@ docker run -p 8080:8080 webhook:latest
 
 Access at http://localhost:8080
 
-## ⚙️ Configuration
+## Configuration
 
 ### Setting Up Your Variables
 
@@ -164,7 +164,7 @@ This repository uses a template for configuration. Before deploying:
 | `location` | Azure region | Default: `australiaeast` |
 | `app_service_plan_sku` | App Service tier | Default: `B1` (Basic) |
 
-## 🖥️ Platform-Specific Notes
+## Platform-Specific Notes
 
 ### Apple Silicon (M1/M2/M3) Users
 
@@ -177,7 +177,7 @@ This repository uses a template for configuration. Before deploying:
 - Use Git Bash or WSL to run the shell scripts
 - You may need to adjust file permissions: `chmod +x scripts/*.sh deploy.sh`
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
